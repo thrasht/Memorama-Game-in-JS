@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="functionality.js"></script>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Memorama</title>		
+</head>
+<body style="margin-top: 20px; background-image: url('universo-2.jpg');" onload="mostrarRecords()">
+
+<div class="contenedorMenu" >
+	<br />
+	<div style="text-align: center;">Seleccionar nivel</div>
+	<ul>
+		
+		<li style="color: white;"><a href="#" onclick="muestraVentanaJugador(5)" >Fácil</a></li>
+		<li><a href="#" onclick="muestraVentanaJugador(7)" >Medio</a></li>
+		<li><a href="#" onclick="muestraVentanaJugador(9)" >Difícil</a></li>
+	
+	</ul>
+	
+	<div class="datosJuego">
+		<p style="text-align: center;">Datos del juego</p>	<br />
+		<p>Jugador: 
+			<span id="nombre"></span>		
+		</p>
+		<p>Tiempo: 
+	        <span id="minutos">0</span>:<span id="segundos">0</span>
+	   </p>
+		<p>Puntaje: 
+			<span id="marcador">0</span>		
+		</p>
+		<p>Turnos: 
+			<span id="turnos">0</span>
+		</p>
+	</div>
+
+</div>
+
+<div id="ContenedorMemorama"></div>
+
+<div class="records" id="record" style="text-align: center;"><br />
+	<div>Mejores Puntajes</div> <br />
+	<div id="Puntajes" style="padding-left:50px"></div>
+	<!--
+	<div style="width:150px; float:left; text-align: left; text-indent: 10px;">Nombre</div> 
+	<div style="width:100px; float: left;">Puntos<br /></div>
+	-->
+</div>
+
+<div id="Ventana">
+	<div id="Controles">
+	Nombre del jugador
+	<input name="Text1" type="text" id="textUsuario"/> <br />
+	<input name="Reset1" type="reset" onclick="cerrarVentanaJugador()" value="Cancelar" />
+	<input name="Submit1" type="submit" onclick="return revisaNombre()" value="Aceptar" />
+	</div>
+</div>
+
+<div id="VentanaReintento">
+	<div id="mensaje"></div>
+	<input name="Reset2" type="submit" onclick="mostrarRecords();cerrarVentanaReintento()" value="Cancelar" />
+	<input name="Submit2" type="submit" onclick="mostrarRecords(); creaMemorama()" value="Reintentar" />
+
+</div>
+
+</body>
+
+</html>

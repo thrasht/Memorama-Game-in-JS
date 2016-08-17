@@ -1,0 +1,118 @@
+#ContenedorMemorama
+{
+	position: relative;
+	float: left;
+	width: 780px;
+	height: 600px;	
+	border: 5px solid black;
+	background-color: gray;
+}
+
+#Ventana
+{
+	position: absolute;
+	left: 500px;
+	top: 100px;
+	width: 250px;
+	height: 80px;
+	background-color: black;
+	color: white;	
+	visibility: hidden;
+	border: 10px solid white;
+}
+
+#VentanaReintento
+{
+	position: absolute;
+	left: 500px;
+	top: 100px;
+	width: 300px;
+	height: 80px;
+	background-color: black;
+	color: white;	
+	visibility: hidden;
+	border: 10px solid white;
+
+}
+
+#Controles
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: left;
+	vertical-align: top;
+	padding-top: 10px;
+	padding-left: 15px;
+
+}
+
+.contenedorMenu
+{
+	position: relative;
+	width: 200px;
+	background-color: gray;	
+	float: left;
+	height: 600px;
+	border: 5px solid black;
+	margin-left: 50px;
+}
+
+.contenedorMenu li
+{
+	list-style: none;
+	display: block;	
+
+
+}
+
+.datosJuego
+{
+	border-top: 5px solid black;	
+
+}
+
+.records
+{
+	position: relative;
+	float: left;
+	width: 250px;
+	height: 600px;	
+	border: 5px solid black;
+	background-color: gray;
+}
+
+.carta
+{
+	position: relative;
+	background-image: url("img0.png"); 
+	width: 108px;
+	height: 174px;
+	float: left;
+	left: 5px;
+	top: 7px;
+	border: 10px solid gray;
+}
+
+div p
+{
+	padding-left: 10px;	
+}
+
+.nombre
+{
+	float: left;	
+	width: 150px;
+	text-align: left;
+	text-indent: 5px;
+
+}
+
+.puntos
+{
+	float: left;	
+	width: 50px;
+	text-align: left;
+	text-indent: 20px;
+	
+}
